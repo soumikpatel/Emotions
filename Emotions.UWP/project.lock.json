@@ -26544,11 +26544,8 @@
     },
     "dependencies": {
       "Microsoft.NETCore.UniversalWindowsPlatform": "5.3.3",
-      "Xamarin.Forms": "2.3.4.247",
-      "Newtonsoft.Json": {
-        "target": "Package",
-        "version": "[10.0.3, )"
-      }
+      "Newtonsoft.Json": "10.0.3",
+      "Xamarin.Forms": "2.3.4.247"
     },
     "frameworks": {
       "uap10.0": {}

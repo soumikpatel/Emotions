@@ -4,11 +4,13 @@
             xmlns:local="clr-namespace:Emotions"
             x:Class="Emotions.MainPage">
 
-    <NavigationPage Title="Detect">
+    <!--<NavigationPage Title="Detect">
         <x:Arguments>
             <local:HomePage />
         </x:Arguments>
-    </NavigationPage>
+    </NavigationPage>-->
+    <local:HomePage Title="Detect"/>
     <local:History Title="History"/>
+
 
 </TabbedPage>

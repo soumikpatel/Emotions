@@ -2,7 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Emotions.HomePage">
-    <ContentPage.Content>
-        <Label Text="Home Page!" VerticalOptions="Center" HorizontalOptions="Center"/>
-    </ContentPage.Content>
+    <ScrollView>
+        <StackLayout Margin="20" Orientation="Vertical">
+            <Button Image="camera_button.png" WidthRequest="20" Clicked="LoadCamera">
+            </Button>
+            <Image x:Name="image" />
+            <Label/>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

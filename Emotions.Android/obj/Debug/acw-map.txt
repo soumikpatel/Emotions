@@ -2,6 +2,14 @@ Emotions.Droid.MainActivity, Emotions.Android;md58eaff4cea28738dda5dbe350a4760c5
 Emotions.Droid.MainActivity, Emotions.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md58eaff4cea28738dda5dbe350a4760c52.MainActivity
 Emotions.Droid.MainActivity;md58eaff4cea28738dda5dbe350a4760c52.MainActivity
 emotions.droid.MainActivity;md58eaff4cea28738dda5dbe350a4760c52.MainActivity
+Emotions.Droid.MainApplication, Emotions.Android;md58eaff4cea28738dda5dbe350a4760c52.MainApplication
+Emotions.Droid.MainApplication, Emotions.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md58eaff4cea28738dda5dbe350a4760c52.MainApplication
+Emotions.Droid.MainApplication;md58eaff4cea28738dda5dbe350a4760c52.MainApplication
+emotions.droid.MainApplication;md58eaff4cea28738dda5dbe350a4760c52.MainApplication
+Plugin.Media.MediaPickerActivity, Plugin.Media;md5f1b52d9f1d5d1981437e7e130649468a.MediaPickerActivity
+Plugin.Media.MediaPickerActivity, Plugin.Media, Version=3.0.1.0, Culture=neutral, PublicKeyToken=null;md5f1b52d9f1d5d1981437e7e130649468a.MediaPickerActivity
+Plugin.Media.MediaPickerActivity;md5f1b52d9f1d5d1981437e7e130649468a.MediaPickerActivity
+plugin.media.MediaPickerActivity;md5f1b52d9f1d5d1981437e7e130649468a.MediaPickerActivity
 Android.Support.V4.App.SharedElementCallback/IOnSharedElementsReadyListenerImplementor, Xamarin.Android.Support.Compat;mono.android.support.v4.app.SharedElementCallback_OnSharedElementsReadyListenerImplementor
 Android.Support.V4.App.SharedElementCallback+IOnSharedElementsReadyListenerImplementor, Xamarin.Android.Support.Compat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.app.SharedElementCallback_OnSharedElementsReadyListenerImplementor
 Android.Support.V4.App.SharedElementCallback.IOnSharedElementsReadyListenerImplementor;mono.android.support.v4.app.SharedElementCallback_OnSharedElementsReadyListenerImplementor

@@ -7,7 +7,7 @@
             <Button Image="camera_button.png" WidthRequest="20" Clicked="LoadCamera">
             </Button>
             <Image x:Name="image" />
-            <Label/>
+            <Label x:Name="TagLabel"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

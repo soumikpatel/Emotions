@@ -74,7 +74,7 @@ namespace Emotions
             // NOTE: You must use the same region in your REST call as you used to obtain your subscription keys.
             //   For example, if you obtained your subscription keys from westcentralus, replace "westus" in the 
             //   URI below with "westcentralus".
-            string uri = "https://westus.api.cognitive.microsoft.com/emotion/v1.0";
+            string uri = "https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize?";
             HttpResponseMessage response;
             string responseContent;
 

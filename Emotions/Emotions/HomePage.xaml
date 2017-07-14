@@ -4,10 +4,11 @@
              x:Class="Emotions.HomePage">
     <ScrollView>
         <StackLayout Margin="20" Orientation="Vertical">
-            <Button Image="camera_button.png" WidthRequest="20" Clicked="LoadCamera">
-            </Button>
-            <Image x:Name="image" />
             <Label x:Name="TagLabel"/>
+            <Image x:Name="image" />
+            <Button Image="camera_button.png" Clicked="LoadCamera" BackgroundColor="Transparent" VerticalOptions="End" HorizontalOptions="CenterAndExpand">
+            </Button>
         </StackLayout>
     </ScrollView>
+    
 </ContentPage>

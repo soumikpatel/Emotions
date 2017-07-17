@@ -6,9 +6,10 @@
         <StackLayout Margin="20" Orientation="Vertical">
             <Label x:Name="TagLabel"/>
             <Image x:Name="image" />
-            <Button Image="camera_button.png" Clicked="LoadCamera" BackgroundColor="Transparent" VerticalOptions="End" HorizontalOptions="CenterAndExpand">
-            </Button>
+            
         </StackLayout>
     </ScrollView>
-    
+    <Button Image="camera_button.png" Clicked="LoadCamera" BackgroundColor="Transparent" BorderColor="Transparent" VerticalOptions="End" HorizontalOptions="CenterAndExpand">
+    </Button>
+
 </ContentPage>

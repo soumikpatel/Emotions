@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Emotions.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,13 @@ namespace Emotions
         public History()
         {
             InitializeComponent();
+        }
+
+        async void Handle_ClickedAsync(object sender, System.EventArgs e)
+        {
+            List<NotHotDogModel> notHotDogInformation = await AzureManager.AzureManagerInstance.GetHotDogInformation();
+
+            HotDogList.ItemsSource = notHotDogInformation;
         }
     }
 }

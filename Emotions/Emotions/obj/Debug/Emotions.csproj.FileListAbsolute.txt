@@ -33,3 +33,5 @@ D:\Programming\Github\Emotions\Emotions\Emotions\obj\Debug\Emotions.HomePage.xam
 D:\Programming\Github\Emotions\Emotions\Emotions\obj\Debug\Emotions.History.xaml.g.cs
 D:\Programming\Github\Emotions\Emotions\Emotions\obj\Debug\Emotions.dll
 D:\Programming\Github\Emotions\Emotions\Emotions\obj\Debug\Emotions.pdb
+D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\Microsoft.WindowsAzure.Mobile.dll
+D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\Microsoft.WindowsAzure.Mobile.xml

@@ -5,11 +5,12 @@
     <ScrollView>
         <StackLayout Margin="20" Orientation="Vertical">
             <Label x:Name="TagLabel"/>
+            <Label/>
             <Image x:Name="image" />
-            
+            <Button Image="camera_button.png" Clicked="LoadCamera" BackgroundColor="Transparent" BorderColor="Transparent" VerticalOptions="EndAndExpand">
+            </Button>
         </StackLayout>
     </ScrollView>
-    <Button Image="camera_button.png" Clicked="LoadCamera" BackgroundColor="Transparent" BorderColor="Transparent" VerticalOptions="End" HorizontalOptions="CenterAndExpand">
-    </Button>
+    
 
 </ContentPage>

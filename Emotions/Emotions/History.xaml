@@ -7,14 +7,20 @@
     </ContentPage.Padding>
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="See Photo Information" TextColor="White" BackgroundColor="Red" Clicked="Handle_ClickedAsync" />
-            <ListView x:Name="HotDogList" HasUnevenRows="false">
+            <Button Text="See History" TextColor="White" BackgroundColor="Red" Clicked="GetData" />
+            <ListView x:Name="EmotionsList" HasUnevenRows="false">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding Longitude, StringFormat='Longitude: {0:N}'}" HorizontalOptions="FillAndExpand" Margin="20,0,0,0" VerticalTextAlignment="Center" />
-                                <Label Text="{Binding Latitude, StringFormat='Latitude: {0:N}'}" VerticalTextAlignment="Center" Margin="0,0,20,0" />
+                                <Label Text="{Binding anger, StringFormat='anger: {0:N}'}" VerticalTextAlignment="Center" Margin="20,0,0,0" />
+                                <Label Text="{Binding contempt, StringFormat='contempt: {0:N}'}" VerticalTextAlignment="Center" Margin="0,0,20,0" />
+                                <Label Text="{Binding disgust, StringFormat='disgust: {0:N}'}" VerticalTextAlignment="Center" Margin="0,0,20,0" />
+                                <Label Text="{Binding fear, StringFormat='fear: {0:N}'}" VerticalTextAlignment="Center" Margin="0,0,20,0" />
+                                <Label Text="{Binding happiness, StringFormat='hapiness: {0:N}'}" VerticalTextAlignment="Center" Margin="0,0,20,0" />
+                                <Label Text="{Binding neutral, StringFormat='neutral: {0:N}'}" VerticalTextAlignment="Center" Margin="0,0,20,0" />
+                                <Label Text="{Binding sadness, StringFormat='sadness: {0:N}'}" VerticalTextAlignment="Center" Margin="0,0,20,0" />
+                                <Label Text="{Binding surprise, StringFormat='surprise: {0:N}'}" VerticalTextAlignment="Center" Margin="0,0,20,0" />
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

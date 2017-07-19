@@ -18,11 +18,11 @@ namespace Emotions
             InitializeComponent();
         }
 
-        async void Handle_ClickedAsync(object sender, System.EventArgs e)
+        async void GetData(object sender, System.EventArgs e)
         {
-            List<NotHotDogModel> notHotDogInformation = await AzureManager.AzureManagerInstance.GetHotDogInformation();
+            List<EmotionsHistoryModel> emotionInformation = await AzureManager.AzureManagerInstance.GetEmotionInformation();
 
-            HotDogList.ItemsSource = notHotDogInformation;
+            EmotionsList.ItemsSource = emotionInformation;
         }
     }
 }

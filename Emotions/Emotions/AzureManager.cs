@@ -12,12 +12,12 @@ namespace Emotions
     {
         private static AzureManager instance;
 		private MobileServiceClient client;
-		private IMobileServiceTable<NotHotDogModel> notHotDogTable;
+		private IMobileServiceTable<EmotionsHistoryModel> emotionTable;
 
 		private AzureManager()
 		{
-			this.client = new MobileServiceClient("https://nothotdoginformation.azurewebsites.net");
-            this.notHotDogTable = this.client.GetTable<NotHotDogModel>();
+			this.client = new MobileServiceClient("http://emotions-soumik.azurewebsites.net");
+            this.emotionTable = this.client.GetTable<EmotionsHistoryModel>();
 		}
 
 		public MobileServiceClient AzureClient
@@ -38,9 +38,9 @@ namespace Emotions
 			}
 		}
 
-		public async Task<List<NotHotDogModel>> GetHotDogInformation()
+		public async Task<List<EmotionsHistoryModel>> GetEmotionInformation()
 		{
-			return await this.notHotDogTable.ToListAsync();
+			return await this.emotionTable.ToListAsync();
 		}
     }
 }

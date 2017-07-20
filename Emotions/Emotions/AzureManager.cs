@@ -16,13 +16,10 @@ namespace Emotions
 
 		private AzureManager()
 		{
-            try
-            {
+            
                 this.client = new MobileServiceClient("http://emotions-soumik.azurewebsites.net");
                 this.emotionTable = this.client.GetTable<EmotionsHistoryModel>();
-            } catch (Exception e) {
-                System.Diagnostics.Debug.WriteLine(e.Message);
-            }
+            
 		}
 
 		public MobileServiceClient AzureClient

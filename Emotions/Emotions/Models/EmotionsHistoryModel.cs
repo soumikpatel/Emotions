@@ -12,6 +12,9 @@ namespace Emotions.Models
         [JsonProperty(PropertyName = "id")]
         public string id { get; set; }
 
+        [JsonProperty(PropertyName = "createdAt")]
+        public DateTime createdAt { get; set; }
+
         [JsonProperty(PropertyName = "anger")]
         public float anger { get; set; }
 

@@ -7,13 +7,14 @@
     </ContentPage.Padding>
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="See History" TextColor="White" BackgroundColor="Red" Clicked="GetData" />
-            <ListView x:Name="EmotionsList" HasUnevenRows="False" RowHeight="220">
+            <Button Text="Get History" TextColor="White" BackgroundColor="Red" Clicked="GetData" />
+            <ListView x:Name="EmotionsList" HasUnevenRows="False" RowHeight="250">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HeightRequest="100">
-                                <Label Text="{Binding anger, StringFormat='anger: {0:N} %'}" VerticalTextAlignment="Center" Margin="20,0,0,0" />
+                                <Label Text="{Binding createdAt, StringFormat='{0:MMMM d, yyyy h:mm tt}'}" Font="15,Bold" VerticalTextAlignment="Center" Margin="20,0,0,0" />
+                                <Label Text="{Binding anger, StringFormat='anger: {0:N} %'}" VerticalTextAlignment="Center" Margin="20,0,20,0" />
                                 <Label Text="{Binding contempt, StringFormat='contempt: {0:N} %'}" VerticalTextAlignment="Center" Margin="20,0,20,0" />
                                 <Label Text="{Binding disgust, StringFormat='disgust: {0:N} %'}" VerticalTextAlignment="Center" Margin="20,0,20,0" />
                                 <Label Text="{Binding fear, StringFormat='fear: {0:N} %'}" VerticalTextAlignment="Center" Margin="20,0,20,0" />

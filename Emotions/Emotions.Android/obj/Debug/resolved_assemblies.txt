@@ -64,6 +64,7 @@ D:\Programming\Github\Emotions\Emotions\Emotions.Android\obj\Debug\android\asset
 D:\Programming\Github\Emotions\Emotions\Emotions.Android\obj\Debug\android\assets\System.Threading.Tasks.dll
 D:\Programming\Github\Emotions\Emotions\Emotions.Android\obj\Debug\android\assets\System.Collections.dll
 D:\Programming\Github\Emotions\Emotions\Emotions.Android\obj\Debug\android\assets\System.IO.dll
+D:\Programming\Github\Emotions\Emotions\Emotions.Android\obj\Debug\android\assets\System.Runtime.Extensions.dll
 D:\Programming\Github\Emotions\Emotions\Emotions.Android\obj\Debug\android\assets\System.ComponentModel.dll
 D:\Programming\Github\Emotions\Emotions\Emotions.Android\obj\Debug\android\assets\System.Xml.ReaderWriter.dll
 D:\Programming\Github\Emotions\Emotions\Emotions.Android\obj\Debug\android\assets\System.Reflection.dll
@@ -79,7 +80,6 @@ D:\Programming\Github\Emotions\Emotions\Emotions.Android\obj\Debug\android\asset
 D:\Programming\Github\Emotions\Emotions\Emotions.Android\obj\Debug\android\assets\System.Runtime.Serialization.dll
 D:\Programming\Github\Emotions\Emotions\Emotions.Android\obj\Debug\android\assets\System.ServiceModel.Internals.dll
 D:\Programming\Github\Emotions\Emotions\Emotions.Android\obj\Debug\android\assets\System.Reflection.Extensions.dll
-D:\Programming\Github\Emotions\Emotions\Emotions.Android\obj\Debug\android\assets\System.Runtime.Extensions.dll
 D:\Programming\Github\Emotions\Emotions\Emotions.Android\obj\Debug\android\assets\System.Linq.Queryable.dll
 D:\Programming\Github\Emotions\Emotions\Emotions.Android\obj\Debug\android\assets\System.Runtime.Numerics.dll
 D:\Programming\Github\Emotions\Emotions\Emotions.Android\obj\Debug\android\assets\System.Numerics.dll

@@ -4,6 +4,7 @@
              x:Class="Emotions.HomePage">
     <ScrollView>
         <StackLayout Margin="20" Orientation="Vertical">
+            <ActivityIndicator x:Name="loadingCircle" IsRunning="True" IsVisible="False" />
             <Label x:Name="TagLabel" HorizontalTextAlignment="Center"/>
             <Label/>
             <Image x:Name="image" />

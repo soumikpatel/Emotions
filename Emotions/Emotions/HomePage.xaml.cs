@@ -68,6 +68,7 @@ namespace Emotions
 
         async Task MakeRequest(MediaFile file)
         {
+            loadingCircle.IsVisible = true;
             var client = new HttpClient();
 
             // Request headers - replace this example key with your valid key.
@@ -90,18 +91,28 @@ namespace Emotions
                 response = await client.PostAsync(uri, content);
                 var responseContent = response.Content.ReadAsStringAsync().Result;
                 var x = JsonConvert.DeserializeObject<IList<EmotionModel>>(responseContent);
+                loadingCircle.IsVisible = false;
 
-                foreach (var emotion in x)
+                if (x.Count != 0)
                 {
-                    TagLabel.Text = "Anger: " + x[x.IndexOf(emotion)].scores.anger.ToString() + "\n";
-                    TagLabel.Text += "Contempt: " + x[x.IndexOf(emotion)].scores.contempt.ToString() + "\n";
-                    TagLabel.Text += "Disgust: " + x[x.IndexOf(emotion)].scores.disgust.ToString() + "\n";
-                    TagLabel.Text += "Fear: " + x[x.IndexOf(emotion)].scores.fear.ToString() + "\n";
-                    TagLabel.Text += "Hapiness: " + x[x.IndexOf(emotion)].scores.hapiness.ToString() + "\n";
-                    TagLabel.Text += "Neutral: " + x[x.IndexOf(emotion)].scores.neutral.ToString() + "\n";
-                    TagLabel.Text += "Sadness: " + x[x.IndexOf(emotion)].scores.sadness.ToString() + "\n";
-                    TagLabel.Text += "Surprise: " + x[x.IndexOf(emotion)].scores.surprise.ToString() + "\n";
-                }                
+                    foreach (var emotion in x)
+                    {                        
+                        TagLabel.Text = "Anger: " + Math.Round((x[x.IndexOf(emotion)].scores.anger * 100), 2).ToString() + " %\n";
+                        TagLabel.Text += "Contempt: " + Math.Round((x[x.IndexOf(emotion)].scores.contempt * 100), 2).ToString() + " %\n";
+                        TagLabel.Text += "Disgust: " + Math.Round((x[x.IndexOf(emotion)].scores.disgust * 100), 2).ToString() + " %\n";
+                        TagLabel.Text += "Fear: " + Math.Round((x[x.IndexOf(emotion)].scores.fear * 100), 2).ToString() + " %\n";
+                        TagLabel.Text += "Hapiness: " + Math.Round((x[x.IndexOf(emotion)].scores.hapiness * 100), 2).ToString() + " %\n";
+                        TagLabel.Text += "Neutral: " + Math.Round((x[x.IndexOf(emotion)].scores.neutral * 100), 2).ToString() + " %\n";
+                        TagLabel.Text += "Sadness: " + Math.Round((x[x.IndexOf(emotion)].scores.sadness * 100), 2).ToString() + " %\n";
+                        TagLabel.Text += "Surprise: " + Math.Round((x[x.IndexOf(emotion)].scores.surprise * 100), 2).ToString() + " %\n";
+                    }
+                }
+
+                else
+                {
+                    TagLabel.Text = "No Faces Recognised!";
+                }
+                                
             }
             file.Dispose();
         }

@@ -3,6 +3,7 @@ D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\Emotions.dll
 D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\Emotions.pdb
 D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\Microsoft.ProjectOxford.Common.dll
 D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\Microsoft.ProjectOxford.Emotion.dll
+D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\Microsoft.WindowsAzure.Mobile.dll
 D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\Newtonsoft.Json.dll
 D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\Plugin.Media.Abstractions.dll
 D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\Plugin.Media.dll
@@ -12,6 +13,7 @@ D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\System.Net.Http.Primi
 D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\Xamarin.Forms.Core.dll
 D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\Xamarin.Forms.Platform.dll
 D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\Microsoft.WindowsAzure.Mobile.xml
 D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\Newtonsoft.Json.xml
 D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\Plugin.Media.pdb
 D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\Plugin.Media.xml
@@ -33,5 +35,8 @@ D:\Programming\Github\Emotions\Emotions\Emotions\obj\Debug\Emotions.HomePage.xam
 D:\Programming\Github\Emotions\Emotions\Emotions\obj\Debug\Emotions.History.xaml.g.cs
 D:\Programming\Github\Emotions\Emotions\Emotions\obj\Debug\Emotions.dll
 D:\Programming\Github\Emotions\Emotions\Emotions\obj\Debug\Emotions.pdb
-D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\Microsoft.WindowsAzure.Mobile.dll
-D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\Microsoft.WindowsAzure.Mobile.xml
+D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\Microsoft.WindowsAzure.Mobile.SQLiteStore.dll
+D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\SQLitePCLRaw.batteries_green.dll
+D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\SQLitePCLRaw.core.dll
+D:\Programming\Github\Emotions\Emotions\Emotions\bin\Debug\Microsoft.WindowsAzure.Mobile.SQLiteStore.xml

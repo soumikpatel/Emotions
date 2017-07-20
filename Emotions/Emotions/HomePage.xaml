@@ -4,7 +4,7 @@
              x:Class="Emotions.HomePage">
     <ScrollView>
         <StackLayout Margin="20" Orientation="Vertical">
-            <Label x:Name="TagLabel"/>
+            <Label x:Name="TagLabel" HorizontalTextAlignment="Center"/>
             <Label/>
             <Image x:Name="image" />
             <Button Image="camera_button.png" Clicked="LoadCamera" BackgroundColor="Transparent" BorderColor="Transparent" VerticalOptions="EndAndExpand">

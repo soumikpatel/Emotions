@@ -1,4 +1,6 @@
-﻿using Plugin.Media;
+﻿using Emotions.Models;
+using Newtonsoft.Json;
+using Plugin.Media;
 using Plugin.Media.Abstractions;
 using System;
 using System.Collections.Generic;
@@ -76,7 +78,6 @@ namespace Emotions
             //   URI below with "westcentralus".
             string uri = "https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize?";
             HttpResponseMessage response;
-            string responseContent;
 
             // Request body. Try this sample with a locally stored JPEG image.
             byte[] byteData = GetImageAsByteArray(file);
@@ -87,14 +88,22 @@ namespace Emotions
                 // The other content types you can use are "application/json" and "multipart/form-data".
                 content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
                 response = await client.PostAsync(uri, content);
-                responseContent = response.Content.ReadAsStringAsync().Result;
-            }
+                var responseContent = response.Content.ReadAsStringAsync().Result;
+                var x = JsonConvert.DeserializeObject<IList<EmotionModel>>(responseContent);
 
-            //A peak at the JSON response.
-            //Console.WriteLine(responseContent);
-            TagLabel.Text = responseContent;
+                foreach (var emotion in x)
+                {
+                    TagLabel.Text = "Anger: " + x[x.IndexOf(emotion)].scores.anger.ToString() + "\n";
+                    TagLabel.Text += "Contempt: " + x[x.IndexOf(emotion)].scores.contempt.ToString() + "\n";
+                    TagLabel.Text += "Disgust: " + x[x.IndexOf(emotion)].scores.disgust.ToString() + "\n";
+                    TagLabel.Text += "Fear: " + x[x.IndexOf(emotion)].scores.fear.ToString() + "\n";
+                    TagLabel.Text += "Hapiness: " + x[x.IndexOf(emotion)].scores.hapiness.ToString() + "\n";
+                    TagLabel.Text += "Neutral: " + x[x.IndexOf(emotion)].scores.neutral.ToString() + "\n";
+                    TagLabel.Text += "Sadness: " + x[x.IndexOf(emotion)].scores.sadness.ToString() + "\n";
+                    TagLabel.Text += "Surprise: " + x[x.IndexOf(emotion)].scores.surprise.ToString() + "\n";
+                }                
+            }
             file.Dispose();
         }
-
     }
 }

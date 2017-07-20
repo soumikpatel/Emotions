@@ -101,10 +101,11 @@ class MonoPackageManager_Resources {
 		"Emotions.Android.dll",
 		"Emotions.dll",
 		"FormsViewGroup.dll",
-		"Microsoft.Azure.Mobile.Client.dll",
-		"Microsoft.Azure.Mobile.Client.SQLiteStore.dll",
 		"Microsoft.ProjectOxford.Common.dll",
 		"Microsoft.ProjectOxford.Emotion.dll",
+		"Microsoft.WindowsAzure.Mobile.dll",
+		"Microsoft.WindowsAzure.Mobile.Ext.dll",
+		"Microsoft.WindowsAzure.Mobile.SQLiteStore.dll",
 		"Newtonsoft.Json.dll",
 		"PCLCrypto.dll",
 		"PInvoke.BCrypt.dll",
@@ -145,7 +146,6 @@ class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
-		"Microsoft.WindowsAzure.Mobile.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

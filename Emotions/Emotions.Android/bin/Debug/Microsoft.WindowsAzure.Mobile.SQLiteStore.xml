@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>Microsoft.Azure.Mobile.Client.SQLiteStore</name>
+        <name>Microsoft.WindowsAzure.Mobile.SQLiteStore</name>
     </assembly>
     <members>
-        <member name="T:Microsoft.WindowsAzure.MobileServices.SQLiteStore.ColumnDefinition">
+        <member name="M:System.Collections.Generic.EnumerableExtensions.Split``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
             <summary>
-            A class that represents the type of column on local store
+            Splits the given sequence into sequences of the given length.
             </summary>
         </member>
         <member name="T:Microsoft.WindowsAzure.MobileServices.SQLiteStore.MobileServiceSQLiteStore">
@@ -186,14 +186,14 @@
               Looks up a localized string similar to Value of type &apos;{0}&apos; is not supported..
             </summary>
         </member>
+        <member name="T:Microsoft.WindowsAzure.MobileServices.SQLiteStore.ColumnDefinition">
+            <summary>
+            A class that represents the type of column on local store
+            </summary>
+        </member>
         <member name="T:Microsoft.WindowsAzure.MobileServices.SQLiteStore.TableDefinition">
             <summary>
             A class that represents the structure of table on local store
-            </summary>
-        </member>
-        <member name="M:System.Collections.Generic.EnumerableExtensions.Split``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
-            <summary>
-            Splits the given sequence into sequences of the given length.
             </summary>
         </member>
     </members>

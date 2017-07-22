@@ -5,8 +5,8 @@
     <ScrollView>
         <StackLayout Margin="20" Orientation="Vertical">
             <ActivityIndicator x:Name="loadingCircle" IsRunning="True" IsVisible="False" />
+            <Label x:Name="Heading" Font="32,Bold" HorizontalTextAlignment="Center"/>
             <Label x:Name="TagLabel" HorizontalTextAlignment="Center"/>
-            <Label/>
             <Image x:Name="image" />
             <Button Image="camera_button.png" Clicked="LoadCamera" BackgroundColor="Transparent" BorderColor="Transparent" VerticalOptions="EndAndExpand">
             </Button>

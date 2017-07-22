@@ -43,5 +43,11 @@ namespace Emotions
 		{
 			return await this.emotionTable.ToListAsync();
 		}
+
+        public async Task PostEmotions(EmotionsHistoryModel emotionResult)
+        {
+            await this.emotionTable.InsertAsync(emotionResult);
+        }
+
     }
 }

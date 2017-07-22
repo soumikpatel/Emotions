@@ -101,25 +101,44 @@ namespace Emotions
                         var contempt = Math.Round((x[x.IndexOf(emotion)].scores.contempt * 100), 2);
                         var disgust = Math.Round((x[x.IndexOf(emotion)].scores.disgust * 100), 2);
                         var fear = Math.Round((x[x.IndexOf(emotion)].scores.fear * 100), 2);
-                        var hapiness = Math.Round((x[x.IndexOf(emotion)].scores.hapiness * 100), 2);
+                        var happiness = Math.Round((x[x.IndexOf(emotion)].scores.hapiness * 100), 2);
                         var neutral = Math.Round((x[x.IndexOf(emotion)].scores.neutral * 100), 2);
                         var sadness = Math.Round((x[x.IndexOf(emotion)].scores.sadness * 100), 2);
                         var surprise = Math.Round((x[x.IndexOf(emotion)].scores.surprise * 100), 2);
+
+                        Heading.Text = "Detected Emotions";
 
                         TagLabel.Text = "Anger: " + anger.ToString() + " %\n";
                         TagLabel.Text += "Contempt: " + contempt.ToString() + " %\n";
                         TagLabel.Text += "Disgust: " + disgust.ToString() + " %\n";
                         TagLabel.Text += "Fear: " + fear.ToString() + " %\n";
-                        TagLabel.Text += "Hapiness: " + hapiness.ToString() + " %\n";
+                        TagLabel.Text += "Happiness: " + happiness.ToString() + " %\n";
                         TagLabel.Text += "Neutral: " + neutral.ToString() + " %\n";
                         TagLabel.Text += "Sadness: " + sadness.ToString() + " %\n";
                         TagLabel.Text += "Surprise: " + surprise.ToString() + " %\n";
+
+                        EmotionsHistoryModel model = new EmotionsHistoryModel()
+                        {
+                            anger = (float)anger,
+                            contempt = (float)contempt,
+                            disgust = (float)disgust,
+                            fear = (float)fear,
+                            happiness = (float)happiness,
+                            neutral = (float)neutral,
+                            sadness = (float)sadness,
+                            surprise = (float)surprise
+                        };
+
+                        await AzureManager.AzureManagerInstance.PostEmotions(model);
                     }
+
+
                 }
 
                 else
                 {
-                    TagLabel.Text = "No Faces Recognised!";
+                    Heading.Text = "";
+                    TagLabel.Text = "No Faces Detected! \n";
                 }
                                 
             }

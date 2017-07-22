@@ -108,14 +108,14 @@ namespace Emotions
 
                         Heading.Text = "Detected Emotions";
 
-                        TagLabel.Text = "Anger: " + anger.ToString() + " %\n";
-                        TagLabel.Text += "Contempt: " + contempt.ToString() + " %\n";
-                        TagLabel.Text += "Disgust: " + disgust.ToString() + " %\n";
-                        TagLabel.Text += "Fear: " + fear.ToString() + " %\n";
-                        TagLabel.Text += "Happiness: " + happiness.ToString() + " %\n";
-                        TagLabel.Text += "Neutral: " + neutral.ToString() + " %\n";
-                        TagLabel.Text += "Sadness: " + sadness.ToString() + " %\n";
-                        TagLabel.Text += "Surprise: " + surprise.ToString() + " %\n";
+                        TagLabel.Text = "Anger:  " + anger.ToString() + " %\n";
+                        TagLabel.Text += "Contempt:  " + contempt.ToString() + " %\n";
+                        TagLabel.Text += "Disgust:  " + disgust.ToString() + " %\n";
+                        TagLabel.Text += "Fear:  " + fear.ToString() + " %\n";
+                        TagLabel.Text += "Happiness:  " + happiness.ToString() + " %\n";
+                        TagLabel.Text += "Neutral:  " + neutral.ToString() + " %\n";
+                        TagLabel.Text += "Sadness:  " + sadness.ToString() + " %\n";
+                        TagLabel.Text += "Surprise:  " + surprise.ToString() + " %\n";
 
                         EmotionsHistoryModel model = new EmotionsHistoryModel()
                         {

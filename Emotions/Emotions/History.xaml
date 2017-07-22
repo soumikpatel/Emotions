@@ -7,22 +7,22 @@
     </ContentPage.Padding>
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="Get History" TextColor="White" BackgroundColor="Red" Clicked="GetData" />
+            <Button Text="Get History" TextColor="White" BackgroundColor="DarkKhaki" Clicked="GetData" />
             <ActivityIndicator x:Name="loadingCircle" IsRunning="True" IsVisible="False" />
             <ListView x:Name="EmotionsList" HasUnevenRows="False" RowHeight="250">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HeightRequest="100">
-                                <Label Text="{Binding createdAt, StringFormat='{0:d MMMM  h:mm tt}'}" Font="32,Bold" VerticalTextAlignment="Center" Margin="20,0,0,0" />
-                                <Label Text="{Binding anger, StringFormat='anger: {0:N} %'}" VerticalTextAlignment="Center" Margin="20,0,20,0" />
-                                <Label Text="{Binding contempt, StringFormat='contempt: {0:N} %'}" VerticalTextAlignment="Center" Margin="20,0,20,0" />
-                                <Label Text="{Binding disgust, StringFormat='disgust: {0:N} %'}" VerticalTextAlignment="Center" Margin="20,0,20,0" />
-                                <Label Text="{Binding fear, StringFormat='fear: {0:N} %'}" VerticalTextAlignment="Center" Margin="20,0,20,0" />
-                                <Label Text="{Binding happiness, StringFormat='hapiness: {0:N} %'}" VerticalTextAlignment="Center" Margin="20,0,20,0" />
-                                <Label Text="{Binding neutral, StringFormat='neutral: {0:N} %'}" VerticalTextAlignment="Center" Margin="20,0,20,0" />
-                                <Label Text="{Binding sadness, StringFormat='sadness: {0:N} %'}" VerticalTextAlignment="Center" Margin="20,0,20,0" />
-                                <Label Text="{Binding surprise, StringFormat='surprise: {0:N} %'}" VerticalTextAlignment="Center" Margin="20,0,20,40" />
+                                <Label Text="{Binding createdAt, StringFormat='{0:d MMMM  h:mm tt}'}" Font="32,Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="20,0,0,0" />
+                                <Label Text="{Binding anger, StringFormat='Anger:  {0:N} %'}" VerticalTextAlignment="Center" Margin="20,0,20,0" />
+                                <Label Text="{Binding contempt, StringFormat='Contempt:  {0:N} %'}" VerticalTextAlignment="Center" Margin="20,0,20,0" />
+                                <Label Text="{Binding disgust, StringFormat='Disgust:  {0:N} %'}" VerticalTextAlignment="Center" Margin="20,0,20,0" />
+                                <Label Text="{Binding fear, StringFormat='Fear:  {0:N} %'}" VerticalTextAlignment="Center" Margin="20,0,20,0" />
+                                <Label Text="{Binding happiness, StringFormat='Happiness:  {0:N} %'}" VerticalTextAlignment="Center" Margin="20,0,20,0" />
+                                <Label Text="{Binding neutral, StringFormat='Neutral:  {0:N} %'}" VerticalTextAlignment="Center" Margin="20,0,20,0" />
+                                <Label Text="{Binding sadness, StringFormat='Sadness:  {0:N} %'}" VerticalTextAlignment="Center" Margin="20,0,20,0" />
+                                <Label Text="{Binding surprise, StringFormat='Surprise:  {0:N} %'}" VerticalTextAlignment="Center" Margin="20,0,20,40" />
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

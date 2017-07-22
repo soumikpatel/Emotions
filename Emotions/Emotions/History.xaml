@@ -8,6 +8,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Button Text="Get History" TextColor="White" BackgroundColor="Red" Clicked="GetData" />
+            <ActivityIndicator x:Name="loadingCircle" IsRunning="True" IsVisible="False" />
             <ListView x:Name="EmotionsList" HasUnevenRows="False" RowHeight="250">
                 <ListView.ItemTemplate>
                     <DataTemplate>

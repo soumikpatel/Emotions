@@ -16,9 +16,8 @@ namespace Emotions
 
 		private AzureManager()
 		{
-            
-                this.client = new MobileServiceClient("http://emotions-soumik.azurewebsites.net");
-                this.emotionTable = this.client.GetTable<EmotionsHistoryModel>();
+            this.client = new MobileServiceClient("http://emotions-soumik.azurewebsites.net");
+            this.emotionTable = this.client.GetTable<EmotionsHistoryModel>();
             
 		}
 

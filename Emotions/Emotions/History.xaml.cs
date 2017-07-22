@@ -20,9 +20,12 @@ namespace Emotions
 
         async void GetData(object sender, System.EventArgs e)
         {
-            List<EmotionsHistoryModel> emotionInformation = await AzureManager.AzureManagerInstance.GetEmotionInformation();
+            loadingCircle.IsVisible = true;
 
+            List<EmotionsHistoryModel> emotionInformation = await AzureManager.AzureManagerInstance.GetEmotionInformation();
             EmotionsList.ItemsSource = emotionInformation;
+
+            loadingCircle.IsVisible = false;
         }
     }
 }

@@ -137,8 +137,8 @@ namespace Emotions
 
                 else
                 {
-                    Heading.Text = "";
-                    TagLabel.Text = "No Faces Detected! \n";
+                    Heading.Text = "\nNo Faces Detected!";
+                    TagLabel.Text = "";
                 }
                                 
             }
